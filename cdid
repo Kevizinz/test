@@ -23,7 +23,7 @@ local example = library:CreateWindow({
 })
 example:AddToggle("Auto Farm [Trucker]", function(state)
    getfenv().drive = (state and true or false)
-   workspace.Gravity = 196
+   workspace.Gravity = 90
    if workspace.Map:findFirstChild("Prop") then
     workspace.Map.Prop:Destroy()
    end
