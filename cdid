@@ -21,9 +21,9 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Marco
 local example = library:CreateWindow({
   text = "CDID"
 })
-example:AddToggle("Auto Farm [Trucker]", function(state)
+example:AddToggle("Auto Lotnok [Trucker]", function(state)
    getfenv().drive = (state and true or false)
-   workspace.Gravity = 196
+   workspace.Gravity = 90
    if workspace.Map:findFirstChild("Prop") then
     workspace.Map.Prop:Destroy()
    end
