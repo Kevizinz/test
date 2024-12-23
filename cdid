@@ -44,7 +44,7 @@ fireproximityprompt(workspace.Etc.Job.Truck.Starter.Prompt)
 until workspace.Etc.Waypoint.Waypoint.Position ~= prepos
 wait(2)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame= workspace.Etc.Job.Truck.Spawner.Part.CFrame
-workspace.Gravity = 196
+workspace.Gravity = 900
 wait(2)
 local thetruck = nil
 repeat wait()
