@@ -23,7 +23,7 @@ local example = library:CreateWindow({
 })
 example:AddToggle("Auto Farm [Trucker]", function(state)
    getfenv().drive = (state and true or false)
-   workspace.Gravity = 1600
+   workspace.Gravity = 2000
    if workspace.Map:findFirstChild("Prop") then
     workspace.Map.Prop:Destroy()
    end
@@ -44,7 +44,7 @@ fireproximityprompt(workspace.Etc.Job.Truck.Starter.Prompt)
 until workspace.Etc.Waypoint.Waypoint.Position ~= prepos
 wait(2)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame= workspace.Etc.Job.Truck.Spawner.Part.CFrame
-workspace.Gravity = 900
+workspace.Gravity = 2000
 wait(2)
 local thetruck = nil
 repeat wait()
